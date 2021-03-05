@@ -41,7 +41,7 @@ export default {
     name: 'Header',
     data(){
         return{
-            title: 'Planning Poker',
+            title: 'Quick Vote',
             copy: false
         }
     },
