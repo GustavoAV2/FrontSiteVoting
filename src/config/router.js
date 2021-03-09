@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Planning from '../views/Planning.vue'
+import Home from '@/views/Home.vue'
+import VotingRoom from '@/views/VotingRoom.vue'
 
 Vue.use(VueRouter)
 
@@ -13,9 +13,9 @@ const routes = [
   },
   
   {
-    path: '/planning',
-    name: 'Planning',
-    component: Planning,
+    path: '/votingroom',
+    name: 'VotingRoom',
+    component: VotingRoom,
     beforeEnter(to, from, next){
       next()
     }

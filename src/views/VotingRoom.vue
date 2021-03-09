@@ -173,10 +173,10 @@ export default {
         },
     },
 
-    // updated(){
-    //     localStorage.setItem('server', JSON.stringify(this.server))
-    //     localStorage.setItem('user', JSON.stringify(this.user_now))
-    // },
+    updated(){
+        localStorage.setItem('server', JSON.stringify(this.server))
+        localStorage.setItem('user', JSON.stringify(this.user_now))
+    },
 
     created(){
         this.server = JSON.parse(localStorage.getItem('server'))

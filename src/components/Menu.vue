@@ -67,7 +67,7 @@ export default {
             this.user.admin = true
             Server.create_server(this.user).then(response => {
                 this.setItems(this.user, response.data)
-                this.$router.push('/planning')
+                this.$router.push('/votingroom')
             }).
             catch(() => {
                 this.user.admin = false
@@ -78,7 +78,7 @@ export default {
         enterServer(){
             Server.connect_server(this.user).then(response => {
                 this.setItems(this.user, response.data)
-                this.$router.push('/planning')
+                this.$router.push('/votingroom')
             }).
             catch(() => {
                 this.generateMsg('Sala não existe!', 'danger')
@@ -199,6 +199,7 @@ export default {
     input{
         text-align: center;
     }
+    
     /* Animated */
     @keyframes slide-in{
         from { transform:  translateY(40px);}
